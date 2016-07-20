@@ -80,7 +80,9 @@ var Engine = (function(global) {
      */
     function update(dt) {
         updateEntities(dt);
-        // checkCollisions();
+        // invoke collision function
+        allEnemies.forEach(checkCollision);
+
     }
 
     /* This is called by the update function and loops through all of the
@@ -171,7 +173,12 @@ var Engine = (function(global) {
         'images/water-block.png',
         'images/grass-block.png',
         'images/enemy-bug.png',
-        'images/char-boy.png'
+        'images/char-boy-win.png',
+        'images/char-cat-girl.png',
+        'images/try-again.png',
+        'images/enemy-bug-flip.png',
+        'images/keep-going.png',
+        'images/enemy-bug-lose.png'
     ]);
     Resources.onReady(init);
 
