@@ -140,7 +140,7 @@ Player.prototype.wonorlost = function() {
 Player.prototype.render = function() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
     //run win or lose function test here
-    player.wonorlost();
+    this.wonorlost();
 
 };
 
